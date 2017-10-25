@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = "ViperMcFlurrySwiftFix"
-    s.version = "1.0.0"
+    s.version = "1.0.1"
     s.summary = "Fix allows using ViperMcFlurry from Swift code (see Demo application)."
     s.homepage = "https://github.com/ladeiko/ViperMcFlurrySwiftFix"
     s.license = { :type => "CUSTOM", :file => "LICENSE" }
@@ -11,5 +11,4 @@ Pod::Spec.new do |s|
     s.frameworks = "UIKit"
     s.requires_arc = true
     s.dependency 'SwiftSelfAware'
-    s.dependency 'ViperMcFlurry'
 end
