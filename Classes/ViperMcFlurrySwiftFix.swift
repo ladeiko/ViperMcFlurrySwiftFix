@@ -7,7 +7,6 @@
 
 import UIKit
 import ObjectiveC.runtime
-import SwiftSelfAware
 
 extension UIViewController {
     
@@ -31,7 +30,8 @@ extension UIViewController {
         
         return output
     }
-    
+
+    @objc(applyViperMcFlurrySwiftFix)
     class func applyViperMcFlurrySwiftFix() {
 
         let originalSelector = NSSelectorFromString("moduleInput")
@@ -50,14 +50,6 @@ extension UIViewController {
         } else {
             method_exchangeImplementations(originalMethod, swizzledMethod)
         }
-    }
-    
-}
-
-class ViperMcFlurrySwiftFixInitializer: SelfAware {
-    
-    static func awake() {
-        UIViewController.applyViperMcFlurrySwiftFix()
     }
     
 }

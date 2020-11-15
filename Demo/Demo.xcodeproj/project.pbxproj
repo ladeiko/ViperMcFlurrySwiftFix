@@ -51,7 +51,7 @@
 		1246D38D1F9F4F33005F9F2F /* Root.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
 		1246D38F1F9F4F85005F9F2F /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 		1246D3911F9F52FE005F9F2F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		1246D3931F9F5731005F9F2F /* ViperMcFlurrySwiftFix.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ViperMcFlurrySwiftFix.podspec; path = ../ViperMcFlurrySwiftFix.podspec; sourceTree = "<group>"; };
+		1246D3931F9F5731005F9F2F /* ViperMcFlurrySwiftFix.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ViperMcFlurrySwiftFix.podspec; path = ../ViperMcFlurrySwiftFix.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1246D3951F9F5743005F9F2F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		14F2248DD5AE4576A5263C27 /* TestPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
 		1D39798A37588BB8DC5326C3 /* RootInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
@@ -293,7 +293,6 @@
 				1246D3741F9F3F03005F9F2F /* Frameworks */,
 				1246D3751F9F3F03005F9F2F /* Resources */,
 				4E2E5F8F0D0244CC7934A2AB /* [CP] Embed Pods Frameworks */,
-				719FA4FBF9AE1E77F7D51DC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -377,35 +376,18 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftSelfAware/SwiftSelfAware.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ViperMcFlurry/ViperMcFlurry.framework",
 				"${BUILT_PRODUCTS_DIR}/ViperMcFlurrySwiftFix/ViperMcFlurrySwiftFix.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSelfAware.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViperMcFlurry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViperMcFlurrySwiftFix.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		719FA4FBF9AE1E77F7D51DC5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
